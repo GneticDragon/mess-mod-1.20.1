@@ -11,6 +11,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item ZENITH = registerItem("zenith", new Item(new Item.Settings()));
+    public static final Item UNREFINED_ZENITH = registerItem("unrefined_zenith", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MessMod.MOD_ID, name), item);
@@ -21,6 +22,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(ZENITH);
+            entries.add(UNREFINED_ZENITH);
         });
     }
 }
