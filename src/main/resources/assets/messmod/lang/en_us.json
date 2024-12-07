@@ -1,4 +1,7 @@
 {
   "item.messmod.zenith": "Zenith",
-  "item.messmod.unrefined_zenith": "Unrefined Zenith"
+  "item.messmod.unrefined_zenith": "Unrefined Zenith",
+
+  "block.messmod.block_of_zenith": "Block of Zenith",
+  "block.messmod.unrefined_block_of_zenith": "Unrefined Block of Zenith"
 }
