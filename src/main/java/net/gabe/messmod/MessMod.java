@@ -3,6 +3,7 @@ package net.gabe.messmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.gabe.messmod.block.ModBlocks;
+import net.gabe.messmod.item.ModItemGroups;
 import net.gabe.messmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,5 +16,6 @@ public class MessMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModItemGroups.registerIemGroups();
 	}
 }

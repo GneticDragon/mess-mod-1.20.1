@@ -21,7 +21,7 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
-    private static final Block UNREFINED_BLOCK_OF_ZENITH =registerBlock("unrefined_block_of_zenith",
+    public static final Block UNREFINED_BLOCK_OF_ZENITH =registerBlock("unrefined_block_of_zenith",
             new Block(AbstractBlock.Settings.create()
                     .strength(2.5f)
                     .requiresTool()
