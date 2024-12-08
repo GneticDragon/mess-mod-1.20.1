@@ -11,19 +11,19 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-
     public static final ItemGroup MESS_MOD_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MessMod.MOD_ID, "mess_mod_items"),
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(ModItems.ZENITH))
                     .displayName(Text.translatable("itemgroup.messmod.mess_mod_items"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.ZENITH);
+                         entries.add(ModItems.ZENITH);
                         entries.add(ModItems.UNREFINED_ZENITH);
                     })
                     .build());
+
     public static final ItemGroup MESS_MOD_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(MessMod.MOD_ID, "mess_mod_items"),
+            Identifier.of(MessMod.MOD_ID, "mess_mod_blocks"),
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(ModBlocks.BLOCK_OF_ZENITH))
                     .displayName(Text.translatable("itemgroup.messmod.mess_mod_blocks"))
